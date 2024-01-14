@@ -24,17 +24,17 @@ sd-2/main/stable-diffusion-2-inpainting:
 sdxl/main/stable-diffusion-xl-base-1-0:
    description: Stable Diffusion XL base model (12 GB)
    repo_id: stabilityai/stable-diffusion-xl-base-1.0
-   recommended: True
+   recommended: False
 
 sdxl-refiner/main/stable-diffusion-xl-refiner-1-0:
    description: Stable Diffusion XL refiner model (12 GB)
    repo_id: stabilityai/stable-diffusion-xl-refiner-1.0
-   recommended: True
+   recommended: False
 
 sdxl/vae/sdxl-1-0-vae-fix:
    description: Fine tuned version of the SDXL-1.0 VAE
    repo_id: madebyollin/sdxl-vae-fp16-fix
-   recommended: True
+   recommended: False
 
 sd-1/main/Analog-Diffusion:
    description: An SD-1.5 model trained on diverse analog photographs (2.13 GB)
@@ -176,11 +176,11 @@ sdxl/t2i_adapter/sketch-sdxl:
 
 sd-1/embedding/EasyNegative:
    path: https://huggingface.co/embed/EasyNegative/resolve/main/EasyNegative.safetensors
-   recommended: True
+   recommended: False
 
 sd-1/embedding/ahx-beta-453407d:
    repo_id: sd-concepts-library/ahx-beta-453407d
-   recommended: True
+   recommended: False
 
 sd-1/lora/Ink scenery:
    path: https://civitai.com/api/download/models/83390
@@ -188,38 +188,38 @@ sd-1/lora/Ink scenery:
 
 sd-1/ip_adapter/ip_adapter_sd15:
    repo_id: InvokeAI/ip_adapter_sd15
-   recommended: True
+   recommended: False
    requires:
       - InvokeAI/ip_adapter_sd_image_encoder
    description: IP-Adapter for SD 1.5 models
 
 sd-1/ip_adapter/ip_adapter_plus_sd15:
    repo_id: InvokeAI/ip_adapter_plus_sd15
-   recommended: True
+   recommended: False
    requires:
       - InvokeAI/ip_adapter_sd_image_encoder
    description: Refined IP-Adapter for SD 1.5 models
 
 sd-1/ip_adapter/ip_adapter_plus_face_sd15:
    repo_id: InvokeAI/ip_adapter_plus_face_sd15
-   recommended: True
+   recommended: False
    requires:
       - InvokeAI/ip_adapter_sd_image_encoder
    description: Refined IP-Adapter for SD 1.5 models, adapted for faces
 
 sdxl/ip_adapter/ip_adapter_sdxl:
    repo_id: InvokeAI/ip_adapter_sdxl
-   recommended: True
+   recommended: False
    requires:
       - InvokeAI/ip_adapter_sdxl_image_encoder
    description: IP-Adapter for SDXL models
 
 any/clip_vision/ip_adapter_sd_image_encoder:
    repo_id: InvokeAI/ip_adapter_sd_image_encoder
-   recommended: True
+   recommended: False
    description: Required model for using IP-Adapters with SD-1/2 models
 
 any/clip_vision/ip_adapter_sdxl_image_encoder:
    repo_id: InvokeAI/ip_adapter_sdxl_image_encoder
-   recommended: True
+   recommended: False
    description: Required model for using IP-Adapters with SDXL models
